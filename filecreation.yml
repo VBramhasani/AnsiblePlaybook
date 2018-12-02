@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+   - name : create a textfile with content
+     path: "/home/ansible/testfile.txt"
+     state: touch
+
+    
